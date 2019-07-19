@@ -1,0 +1,29 @@
+// Should work like: (sum '(1 2 3))
+
+(define sum
+	(lambda ( li )
+		(cond(	(null? li) 		                     0	)
+		(#t (+(car li) (sum (cdr li)                          )))
+		)
+	)	
+)
+
+(#t (+ car( li) (sum (cdr li)))
+
+//
+
+(if (null?) 0			  )
+	(+ (car listofnumbers) (cdr list) ) 
+
+1. what is the simplest case
+3. how do I ask if I am at the simplest case?
+2. what if it is not the simplest case
+
+//
+(define findelement
+	(lambda(N L)
+		(cond ( (= N 1)                                   (car L)   )
+		(#t                          (findelement (- N 1) (cdr L) ) )
+		)
+	)
+)
